@@ -1,0 +1,19 @@
+const express = require('express');
+
+const OngController = require('./Controllers/OngController');
+const IncidentsController = require('./Controllers/IncidentsController');
+const ProfilleController = require('./Controllers/ProfilleController');
+const SessionController = require('./Controllers/SessionController');
+const routes = express.Router();
+routes.post("/sessions", SessionController.logar);
+
+routes.get("/profille", ProfilleController.listarEspecifico);
+
+routes.get('/incidents',IncidentsController.listar);
+routes.post('/incidents',IncidentsController.create);
+routes.delete('/incidents/:id',IncidentsController.delete);
+
+routes.get('/ongs', OngController.listar);
+routes.post('/ongs', OngController.create);
+
+module.exports=routes;
