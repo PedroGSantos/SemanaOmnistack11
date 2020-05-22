@@ -1,9 +1,10 @@
 import React from 'react';
-
-
+import Logon from './pages/logon'
+import './global.css'
 function App() {
+ 
   return (
-    <h1>Papai legaled</h1>
+    <Logon></Logon>
   );
 }
 
