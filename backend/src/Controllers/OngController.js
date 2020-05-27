@@ -21,7 +21,7 @@ module.exports = {
         console.log("Meu nome é pedrin");
         
 
-        return response.json(id);
+        return response.json({id});
     }
     
 };
