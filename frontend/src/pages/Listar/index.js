@@ -11,7 +11,7 @@ export default function Listar(){
             <header>
             <img src={logoImg} alt= "be the hero"/>
             <p>Bem vindo, APDA</p>
-            <Link className="button" to="/incidents/new">Cadastrar novo caso</Link>
+            <Link className="button" to="/casos/novo">Cadastrar novo caso</Link>
             <button type="button"> 
                 <FiPower size={18} color="#E02041"></FiPower>
             </button>
